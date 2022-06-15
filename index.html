@@ -1,96 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adnan Bhai</title>
-    <link rel="shortcut icon" type="x-icon" href="pfp.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/font-awesome.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/550a33af36.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-    a {
-      color: blue;
-    }
-    a:hover {
-      opacity: 0.6;
-    }
-    #body {
-      text-align: center;
-      background-color:black;
-      color: white;
-      font-family: "Ubuntu", sans-serif;
-      margin: 4% 14%;
-    }
-    img {
-      height: 200px;
-      width: auto;
-    }
-    .text-big {
-      font-size: 36px;
-    }
-    .text-small {
-      font-size: 20px;
-    }
 
+<head>
+  <title>Md.Adnan Hossain</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Profile of Md.Adnan Hossain" />
+  <meta name="theme-color" content="#00f4ff" />
+  <meta property="og:title" content="ADNAN" />
+  <meta property="og:url" content="https://adnanbhai.cf" />
+  <meta property="og:description" content="Profile of Md.Adnan Hossain" />
+  <meta property="og:image:secure_url" content="pfp.png" />
+  <meta property="og:image" content="pfp.png" />
+  <meta property="profile:username" content="adnanbhai" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="pfp.png" />
+  <link rel="canonical" href="https://adnanbhai.cf" />
+  <link rel="preload" as="image" href="pfp.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="pfp.png" />
+
+  <style>
+    @viewport {
+      width: device-width ;
+      zoom: 1.0 ;
+    }
     #preloader {
       background: #000 url(loading.gif) no-repeat center center;
       height: 100vh;
-      width: 75%;
+      width: 100%;
+      background-size: cover;
       position: fixed;
       z-index: 100;
     }
+
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+    * *::before *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("background.jpg");
+      font-family: "Ubuntu", sans-serif;
+    }
+
+    .container {
+      min-height: 100vh;
+      padding: 0 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-bg {
+      position: absolute;
+      inset: 0;
+      min-height: 100vh;
+      opacity: 0.1;
+      z-index: -2;
+    }
+
+    .card {
+      position: relative;
+      user-select: none;
+      max-width: 900px;
+      width: 100%;
+      height: auto;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      background-color: #6d8a97;
+      border-radius: 15px;
+      z-index: -2;
+      inset: 0;
+    }
+
+    .profile-img {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .profile-img img {
+      width: 135px;
+      border: 2.2px solid whitesmoke;
+      border-radius: 7px;
+      background: solid;
+    }
+
+    .title-text {
+      display: flex;
+      font-size: 40px;
+      line-height: 1;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      margin-top: 22px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      gap: 15px;
+    }
+    
+    .social-icons a {
+      width: 30px;
+      height: 30px;
+      background: blue;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    
+    .social-icons a:hover{
+      transform: scale(1.5);
+      transition-duration: 400ms;
+
+    }
+
+    .social-icons i {
+      color: #000;
+      font-size: 20px;
+    }
+
+    .fb a {
+      background: red;
+    }
+
+    .snapchat a{
+      background: red;
+    }
+
+    .about{
+      font-size: 20px;
+    }
+
   </style>
-  <body id="body">
-    <div id="preloader"></div>
-    <div class="container">
-      <img src="pfp.png" alt="Couldn't load the picture." />
-      <br />
-      <p class="text-big">Md.Adnan Hossain</p>
-      <p class="text-small">
-        Wassup! This is Adnan. I am a Web Developer and a Progammer with interest
-        in Cars and Electronics. I am a very friendly boy. Feel free to visit all of my social medias below. 
-      </p>
-      <a href="https://youtube.com/c/techandcarinfo" target="_blank"
-        ><i class="fab fa-youtube fa-4x"></i
-      ></a>
-      <a href="https://discord.gg/pHY8xC4e8G"
-        ><i class="fab fa-discord fa-4x" target="_blank"></i
-      ></a>
-      <a href="mailto:adnanhossain093@gmail.com" target="_blank"
-        ><i class="far fa-envelope fa-4x"></i
-      ></a>
-      <a href="https://github.com/adnan240hp" target="_blank"
-        ><i class="fab fa-github fa-4x"></i
-      ></a>
-      <a href="https://www.reddit.com/user/Adnan240hp" target="_blank"
-        ><i class="fab fa-reddit fa-4x"></i
-      ></a>
-      <a href="https://pinterest.com/adnanhossain093" target="_blank"
-        ><i class="fab fa-pinterest fa-4x"></i
-      ></a>
-      <a
-        href="https://www.facebook.com/profile.php?id=100079625994829"
-        target="_blank"
-        ><i class="fab fa-facebook fa-4x"></i
-      ></a>
-      <a href="https://www.instagram.com/adnan240hp" target="_blank"
-        ><i class="fab fa-instagram fa-4x"></i
-      ></a>
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <div class="main-bg"></div>
+  <div class="container">
+    <div class="card">
+      <div class="profile-img">
+        <img src="pfp.png" alt="Loading..." />
+      </div>
+      <div class="title-text">
+        <p>Md.Adnan Hossain</p>
+        <p class="about">Coffee lover - Car enthusiast - Amateur programmer - Backend developer</p>
+      </div>
+      <div class="social-icons">
+        <a href="mailto:adnanhossain093@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://youtube.com/c/techandcarinfo"><i class="fab fa-youtube"></i></a>
+        <div class="fb">
+          <a href="https://www.facebook.com/profile.php?id=100079625994829" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </div>
+        <a href="https://discord.gg/pHY8xC4e8G" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://www.reddit.com/user/Adnan240hp"><i class="fab fa-reddit" target="_blank"></i></a>
+        <a href="https://github.com/adnan240hp"><i class="fab fa-github" target="_blank"></i></a>
+        <a href="https://www.pinterest.com/adnanhossain093" target="_blank"><i class="fab fa-pinterest"></i></a>
+        <a href="https://twitter.com/Adnan240hp"><i class="fab fa-twitter" target="_blank"></i></a>
+        <div class="snapchat">
+          <a href="https://www.snapchat.com/add/adnan240hp" target="_blank"><i class="fab fa-snapchat"></i></a>
+        </div>
+        <a href="https://instagram.com/herbie_flair" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
-    <script>
-      var loader = document.getElementById("preloader");
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
-    </script>
-  </body>
+  </div>
+
+  <div class="mouse-cursor cursor-out"></div>
+  <div class="mouse-cursor cursor-in"></div>
+
+  <script src="https://kit.fontawesome.com/225e5d071e.js" crossorigin="anonymous"></script>
+
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+     loader.style.display = "none";
+    });
+  </script>
+
+</body>
+
 </html>
